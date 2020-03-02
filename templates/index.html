@@ -1,0 +1,34 @@
+<html>
+<head>
+
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+
+
+</head>
+
+<body>
+
+
+    <div style="max-width: 800px; margin:auto">
+        <form method="post">
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Type to be classified text here..." id="exampleMessage" name="exampleMessage"></textarea>
+          <input class="button-primary" type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <section style="margin:auto; max-width:800px">
+        {{ ent }}
+    </section>
+    <section style="margin:auto; max-width:800px">
+        {{ dep }}
+    </section>
+
+</body>
+
+
+
+
+</html>
